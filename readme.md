@@ -1,10 +1,17 @@
 ﻿# Bring Me My Ship
 
-This mod gently places your ship above you, you can use this mod to bring your ship to places you arent supposed to.
+## This is a mod for the game [Outer Wilds](https://store.steampowered.com/app/753640/Outer_Wilds/), it can be loaded using [Outer Wilds Mod Manager.](https://outerwildsmods.com/)
+
+### Description
+
+---
+This mod gently places your ship above you, you can use this mod to bring your ship to places you aren't normally supposed to.
+Because of the game-breaking nature of this mod it is usefull to have a mod that allows you to restart your game loop at will.
 
 Activate by pressing `p` on your keyboard.
 
-`TODO:` Add configuraion.
+### TO-DO
 
-`TODO:` Add controller support.
+* Add settings-menu configuraion.
+* Add controller support.
 
