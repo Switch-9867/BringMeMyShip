@@ -14,4 +14,3 @@ Activate by pressing `p` on your keyboard.
 
 * Add settings-menu configuraion.
 * Add controller support.
-

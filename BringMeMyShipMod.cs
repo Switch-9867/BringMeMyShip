@@ -1,14 +1,9 @@
-﻿using OWML.ModHelper;
+﻿using OWML.Common;
+using OWML.ModHelper;
 using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.SceneManagement;
-using static LoadManager;
 
 namespace BringMeMyShip
 {
@@ -54,7 +49,6 @@ namespace BringMeMyShip
 			OWRigidbody s_rb = ship_body.GetComponent<OWRigidbody>();
 			OWRigidbody p_rb = player_body.GetComponent<OWRigidbody>();
 
-			ModHelper.Console.WriteLine("Here's your ship");
 			s_rb.SetPosition(newPos);
 			s_rb.SetRotation(player_body.transform.rotation);
 			s_rb.SetVelocity(p_rb.GetVelocity());
@@ -70,17 +64,13 @@ namespace BringMeMyShip
 
 		private GameObject GetShipBody()
 		{
-			return GameObject.Find(Strings["ship"]);
+
+			return Locator.GetShipBody().gameObject;
 		}
 
 		private GameObject GetPlayerBody()
 		{
-			return GameObject.Find(Strings["player"]);
-		}
-
-		public void OnSceneLoad()
-		{
-
+			return Locator.GetPlayerBody().gameObject;
 		}
 
 		private bool GetKeyDown(Key keyCode)
